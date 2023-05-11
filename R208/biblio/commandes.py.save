@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+from biblio.bibliotheque import Bibliotheque
+
+def nouveau_genre(biblio):
+    
+    genre_question = str(input("Entrez le nom du genre : "))
+    rep = biblio.genre_existe(genre_question)
+    if  rep == True:
+        print("Le genre existe déjà")
+    elif rep == False:
+        biblio.genre_ajout(genre_question)
+
+def nouveaux_livre(biblio):
+	titre_livre = str(input("Entrez le titre"))
+	genre_livre = str(input("Entrez le genre"))
+	annee_livre = int(input("Entrez l'année de parution"))
+	if rep == True:
+		livre = (titre_livre, genre_livre, annee_livre)
+	elif rep == False:
+		print("Genre non connu")
+		ut(genre_question)
+		livre = (titre_livre, genre_livre, annee_livre)
+def afficher_menu():
+    """Affichage du menu"""
+    phrase2 = "\n Menu principale \n"
+    phrase_option = "[M] Menu Principal \n [LG] Listes des Genres \n [LL] Listes des livres \n [NG] Nouveau Genre \n [NL] Nouveau Livre"
+    phrase_option2 = "\n [SG] Suppression Genres \n [SL] Suppresion Livres"
+    phrase_fin = "\n[Q] Quitter le programme"
+    print("*"*40+phrase2+phrase_option+phrase_option2+phrase_fin+"\n"+"*"*40)
+    rep = ""
+    while rep != "Q":
+        rep = input("Entrez votre commande (M pour afficher le menu ) :")
+        if rep == "M":
+            afficher_menu()
+        elif rep == "LG":
+            print("Listes des genres")
+        elif rep == "LL":
+            print("Listes des livres")
+        elif rep == "NG":
+            nouveau_genre()
+        elif rep == "NL":
+            nouveaux_livre()
+        elif rep == "SG":
+            print("Suppression du genre")
+        elif rep == "SL":
+            print("Suppression de livre")
+
+
+

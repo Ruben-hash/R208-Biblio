@@ -1,0 +1,10 @@
+bibliodb
+setup.py
+biblio/__init__.py
+biblio/bibliotheque.py
+biblio/commandes.py
+biblio/livre.py
+biblio.egg-info/PKG-INFO
+biblio.egg-info/SOURCES.txt
+biblio.egg-info/dependency_links.txt
+biblio.egg-info/top_level.txt

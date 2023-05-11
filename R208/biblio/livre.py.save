@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+class Livre:
+
+	def __init__(self, titre, annee, genre):
+		"""Initialisation de l'objet livre """
+		self.titre = titre
+		self.annee = annee
+		self.genre = genre
+	def __str__(self):
+		return f"{self.annee}, [{self.genre}],  {self.titre}"
+
+	def __lt__(self, other):
+		if self.annee != other.annee:
+			return self.annee < other.annee
+		elif self.genre != other.genre:
+			return self.genre < other.genre
+		else:
+			    def __lt__(self, other):
+        if self.annee != other.annee:
+            return self.annee < other.annee
+        elif self.genre != other.genre:
+            return self.genre < other.genre
+        else:
+            return self.titre < other.titrereturn self.titre < other.titre
