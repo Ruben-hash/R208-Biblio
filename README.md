@@ -2,7 +2,9 @@
 Projet R208: 
             Projet paquet Python effectué dans le cadre du module R208 - Analyse et traitement des données structurées
             Ce projet consiste à un paquet python qui gère les livres d'une bibliothèque.
-            ----------------------------------------------------------------------------
+
+
+
 La gestion d'une bibliothèque est un processus complexe qui nécessite une organisation méthodique et efficace. Pour faciliter cette tâche, un système de gestion de bibliothèque peut être conçu et développé en utilisant la programmation orientée objet (POO) avec Python. 
 
 Dans ce système, plusieurs classes peuvent être créées pour représenter les différentes entités impliquées dans la gestion de la bibliothèque. Par exemple, on peut avoir une classe "Livre" qui contient des attributs tels que le titre, l'auteur, la date de publication, etc. Cette classe peut également comporter des méthodes pour effectuer des opérations telles que l'emprunt ou le retour d'un livre.
